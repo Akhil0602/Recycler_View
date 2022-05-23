@@ -39,6 +39,11 @@ class RecyclerViewAdapter(contex: Context) : RecyclerView.Adapter<RecyclerViewAd
             Tname.setOnClickListener{
                 Toast.makeText(context,"This is contact",Toast.LENGTH_SHORT).show()
             }
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(p0: View?) {
+            Toast.makeText(context,"Hello",Toast.LENGTH_SHORT).show()
         }
 
     }
