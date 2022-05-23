@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        var recyclerViewAdapter= RecyclerViewAdapter()
+        var recyclerViewAdapter= RecyclerViewAdapter(this)
 
         recyclerView.adapter=recyclerViewAdapter
 
